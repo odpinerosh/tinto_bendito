@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Editar">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="407dp"
+        android:layout_height="609dp"
+        android:layout_marginTop="25dp"
+        android:scrollbarStyle="outsideInset"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="98dp"
+                android:layout_height="104dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="20dp"
+                app:srcCompat="@drawable/tintobendito"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/tv_Editar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20dp"
+                android:text="@string/editar" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombres:"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp" />
+
+            <EditText
+                android:id="@+id/et_Nombres"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                android:ems="10"
+                android:enabled="true"
+                android:hint="@string/nombres"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                app:endIconMode="clear_text" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apellidos:"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp" />
+
+            <EditText
+                android:id="@+id/et_Apellidos"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                android:ems="10"
+                android:enabled="true"
+                android:hint="@string/apellidos"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="e-Mail:"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp" />
+
+            <EditText
+                android:id="@+id/et_Correo"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                android:ems="10"
+                android:enabled="true"
+                android:hint="@string/correo"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teléfono Móvil:"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp" />
+
+            <EditText
+                android:id="@+id/et_Movil"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                android:enabled="true"
+                android:hint="@string/movil"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/b_guardar"
+                android:layout_width="143dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="136dp"
+                android:text="@string/guardar"
+                app:strokeColor="#FF9800"
+                app:strokeWidth="2dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

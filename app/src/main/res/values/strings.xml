@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ETB &amp; RecyView</string>
+    <string name="appicon">AppIcon</string>
+    <string name="regresar">Regresar</string>
+    <string name="guardar">Guardar</string>
+    <string name="editar">Editar</string>
+    <string name="clave">Clave</string>
+    <string name="login">Ingresar</string>
+    <string name="nombres">Nombres</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="correo">Correo</string>
+    <string name="movil">Movil</string>
+    <string name="inicio">Sus Datos</string>
+    <string name="sv_VerProductos">Ver Productos</string>
+    <string name="tv_ListProductos">Seleccione los productos y haga click en el botón Hacer Pedido</string>
+    <string name="cafeCaminante">Café del Caminante</string>
+
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "206652656820",
+    "project_id": "tintobentito",
+    "storage_bucket": "tintobentito.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206652656820:android:72ee565060c9b93cbbdbe1",
+        "android_client_info": {
+          "package_name": "com.tintobendito.etb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206652656820-80q1uvi3bjr8df6kfi082j6i0vpnj9a3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPK-M1OZpzPZx6yB4EdEKgbJ1hHW2MtOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206652656820-80q1uvi3bjr8df6kfi082j6i0vpnj9a3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
