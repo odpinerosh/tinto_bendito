@@ -20,12 +20,15 @@
 
     <EditText
         android:id="@+id/et_NombreUsuario"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginBottom="10dp"
         android:ems="10"
-        android:hint="Su usuario"
-        android:inputType="textPersonName"
+        android:hint="Correo Electrónico"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
         android:minHeight="48dp"
         android:textColorHint="#757575"
         app:layout_constraintBottom_toTopOf="@+id/et_PasswdUsuario"
@@ -36,24 +39,42 @@
 
     <EditText
         android:id="@+id/et_PasswdUsuario"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="5dp"
+        android:layout_marginEnd="24dp"
         android:ems="10"
         android:hint="@string/clave"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/b_editar"
+        app:layout_constraintBottom_toTopOf="@+id/b_ingresar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_NombreUsuario" />
 
+    <TextView
+        android:id="@+id/recuperarPwd"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="end|center_horizontal"
+        android:text="¿Olvidó su contraseña?"
+        android:textColor="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_PasswdUsuario" />
+
     <Button
-        android:id="@+id/b_editar"
-        android:layout_width="wrap_content"
+        android:id="@+id/b_ingresar"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="6dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginBottom="79dp"
         android:text="@string/login"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -61,6 +82,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_PasswdUsuario"
         app:strokeColor="@color/button_border"
+        app:strokeWidth="2dp"
+        android:enabled="false"/>
+
+    <View
+        android:id="@+id/v_linea"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="0.5"
+        android:background="@color/teal_700"
+        app:layout_constraintBottom_toTopOf="@+id/b_registro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/b_registro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:enabled="false"
+        android:text="Registrarse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="@color/button_border"
         app:strokeWidth="2dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
