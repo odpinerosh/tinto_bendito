@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TintoBendito">
         <activity
-            android:name=".SplashScreen"
+            android:name=".Login"
             android:exported="false" />
         <activity
             android:name=".RecuperarPWD"
@@ -50,7 +50,11 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Login"
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreen"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -59,10 +63,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-    </application>
+     </application>
 
 </manifest>
