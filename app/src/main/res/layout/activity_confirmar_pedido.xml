@@ -27,6 +27,7 @@
 
         <Button
             android:id="@+id/b_confirmarPedido"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
             android:layout_width="138dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -36,6 +37,8 @@
             android:layout_marginRight="40dp"
             android:layout_weight="1"
             android:text="Confirmar pedido"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/button_face"
             app:strokeColor="#FF9800"
             app:strokeWidth="2dp" />
 
