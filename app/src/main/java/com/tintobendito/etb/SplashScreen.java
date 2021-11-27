@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.tintobendito.etb.vistas.Login;
 
 public class SplashScreen extends AppCompatActivity {
 
