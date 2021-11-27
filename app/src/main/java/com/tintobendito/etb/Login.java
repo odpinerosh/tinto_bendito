@@ -17,7 +17,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        b_editar = findViewById(R.id.b_ingresar);
+        b_editar = findViewById(R.id.b_Registrar);
 
         b_editar.setOnClickListener(new View.OnClickListener() {
             @Override
