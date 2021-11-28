@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/cl_RecuperarPWD"
     tools:context=".vistas.RecuperarPWD">
 
     <ImageView
@@ -33,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_LogoRecuperar" />
 
     <EditText
-        android:id="@+id/et_NombreUsuario"
+        android:id="@+id/et_CorreoRecuPWD"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -54,12 +55,12 @@
         android:id="@+id/b_EnviarCorreo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="304dp"
-        android:enabled="false"
+        android:enabled="true"
         android:text="Enviar correo"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_CorreoRecuPWD"
         app:strokeColor="@color/button_border"
         app:strokeWidth="2dp" />
 
