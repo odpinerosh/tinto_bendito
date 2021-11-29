@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 /*Se hace una intención*/
                 //Intent intent = new Intent(ClaseOrigen, ClaseDestino);
-                Intent intent = new Intent(MainActivity.this, Login.class);
+                Intent intent = new Intent(MainActivity.this, VerProductos_RecV.class);
                 //Actividad que se inicia
                 startActivity(intent);
 

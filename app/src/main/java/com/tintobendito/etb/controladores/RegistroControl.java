@@ -1,4 +1,4 @@
-package com.tintobendito.etb.vistas;
+package com.tintobendito.etb.controladores;
 
 import android.content.Context;
 import android.content.Intent;

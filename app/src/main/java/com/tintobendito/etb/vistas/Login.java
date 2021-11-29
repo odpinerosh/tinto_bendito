@@ -54,8 +54,8 @@ public class Login extends AppCompatActivity {
 
                 stringHabilitar = habilitar();
                 if( stringHabilitar == "") {
-                    Toast.makeText(Login.this, "A Login & Control", Toast.LENGTH_SHORT).show();
-                    //LoginControl.login(Login.this, get_NombreUsuario(), get_PasswdUsuario());
+                    //Toast.makeText(Login.this, "A Login & Control", Toast.LENGTH_SHORT).show();
+                    LoginControl.login(Login.this, get_NombreUsuario(), get_PasswdUsuario());
                 } else {
                     Toast.makeText(Login.this, stringHabilitar, Toast.LENGTH_SHORT).show();
                 }

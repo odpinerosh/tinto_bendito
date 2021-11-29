@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.tintobendito.etb.R;
+import com.tintobendito.etb.controladores.RecuperarPWDControl;
 
 public class RecuperarPWD extends AppCompatActivity {
 
@@ -37,8 +38,8 @@ public class RecuperarPWD extends AppCompatActivity {
 
                 stringHabilitar = habilitar();
                 if( stringHabilitar == "") {
-                    Toast.makeText(RecuperarPWD.this, "A Recuperar & Control", Toast.LENGTH_SHORT).show();
-                    //RecuperarPWDControl.recuperar(RecuperarPWD.this, get_CorreoRecuPWD());
+                    //Toast.makeText(RecuperarPWD.this, "A Recuperar & Control", Toast.LENGTH_SHORT).show();
+                    RecuperarPWDControl.recuperar(RecuperarPWD.this, get_CorreoRecuPWD());
                 } else {
                     Toast.makeText(RecuperarPWD.this, stringHabilitar, Toast.LENGTH_SHORT).show();
                 }
