@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TintoBendito">
         <activity
+            android:name=".vistas.Perfil"
+            android:exported="false" />
+        <activity
             android:name=".vistas.Login"
             android:exported="false" />
         <activity
@@ -64,6 +67,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-     </application>
+    </application>
 
 </manifest>

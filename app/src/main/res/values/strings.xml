@@ -7,6 +7,7 @@
     <string name="clave">Clave</string>
     <string name="login">Ingresar</string>
     <string name="nombres">Nombres</string>
+    <string name="perfil_title">Perfil</string>
     <string name="apellidos">Apellidos</string>
     <string name="correo">Correo</string>
     <string name="movil">Movil</string>
@@ -14,5 +15,7 @@
     <string name="sv_VerProductos">Ver Productos</string>
     <string name="tv_ListProductos">Seleccione los productos y haga click en el botón Hacer Pedido</string>
     <string name="cafeCaminante">Café del Caminante</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

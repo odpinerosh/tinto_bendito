@@ -22,7 +22,7 @@ public class SplashScreen extends AppCompatActivity {
         if (usuario == null) {
             iniciarNuevaActividad(Login.class);
         } else {
-            iniciarNuevaActividad(VerProductos_RecV.class);
+            iniciarNuevaActividad(MainActivity.class);
         }
 
 

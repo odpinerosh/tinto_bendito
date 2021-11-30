@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.Menu;
 
 import java.util.ArrayList;
 
@@ -44,5 +45,11 @@ public class VerProductos_RecV extends AppCompatActivity {
 
 
         //
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.opciones, menu);
+        return true;
     }
 }

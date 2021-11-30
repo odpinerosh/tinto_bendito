@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <!-- Muestra la ActionBar Este es el original -->
     <!--style name="Theme.TintoBendito" parent="Theme.MaterialComponents.DayNight.DarkActionBar"-->
-    <!-- Aqué se modificó para que NO tenga ActionBar-->
+    <!-- Aquí se modificó para que NO tenga ActionBar-->
     <style name="Theme.TintoBendito" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/button_face</item>
