@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.material.appbar.MaterialToolbar;
+import com.google.firebase.auth.FirebaseAuth;
 import com.tintobendito.etb.vistas.Login;
 import com.tintobendito.etb.vistas.Perfil;
 import com.tintobendito.etb.vistas.RecuperarPWD;
@@ -57,6 +58,13 @@ public class MainActivity extends AppCompatActivity {
 
                     case R.id.ajustes: {
                         Toast.makeText(MainActivity.this,"Caracterìstica en desarrollo", Toast.LENGTH_SHORT).show();
+                        return true;
+                    }
+
+                    case R.id.cerrar: {
+                        FirebaseAuth.getInstance().signOut();
+                        startActivity(new Intent(MainActivity.this, Login.class));
+                        finish();
                         return true;
                     }
 

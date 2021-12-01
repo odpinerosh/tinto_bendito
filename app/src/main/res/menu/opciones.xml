@@ -13,4 +13,10 @@
         android:title="Ajustes"
         app:showAsAction="never" />
 
+    <item
+        android:id="@+id/cerrar"
+        android:orderInCategory="3"
+        android:title="Cerrar sesión"
+        app:showAsAction="never" />
+
 </menu>
