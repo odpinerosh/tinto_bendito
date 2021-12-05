@@ -6,19 +6,29 @@ public class Usuario {
     private String lastNameUser;
     private String mobileUser;
     private String mailUser;
+    private String imgUser;
     private long timeStampUser;
 
     public Usuario() {
 
     };
 
-    public Usuario(String id, String firstNameUser, String lastNameUser, String mobileUser, String mailUser, long timeStampUser) {
+    public Usuario(String id, String firstNameUser, String lastNameUser, String mobileUser, String mailUser, String imgUser, long timeStampUser) {
         this.id = id;
         this.firstNameUser = firstNameUser;
         this.lastNameUser = lastNameUser;
         this.mobileUser = mobileUser;
         this.mailUser = mailUser;
+        this.imgUser = imgUser;
         this.timeStampUser = timeStampUser;
+    }
+
+    public String getImgUser() {
+        return imgUser;
+    }
+
+    public void setImgUser(String imgUser) {
+        this.imgUser = imgUser;
     }
 
     public String getId() {
@@ -68,4 +78,6 @@ public class Usuario {
     public void setTimeStampUser(long timeStampUser) {
         this.timeStampUser = timeStampUser;
     }
+
+
 }

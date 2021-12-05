@@ -22,4 +22,8 @@
             @drawable/splash_bg
         </item>
     </style>
+
+    <style name="ImgRoundedCorners" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name = "cornerSize">50%</item>
+    </style>
 </resources>

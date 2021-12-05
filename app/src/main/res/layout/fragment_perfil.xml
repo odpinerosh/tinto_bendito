@@ -6,15 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".vistas.fragments.PerfilFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-
-    <!--TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center|center_horizontal|center_vertical"
-        android:text="@string/hello_blank_fragment"
-        /-->
-
     <ScrollView
         android:id="@+id/scView_PerfilFrag"
         android:layout_width="match_parent"
@@ -28,7 +19,19 @@
             android:layout_gravity="center"
             android:orientation="vertical">
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_FotoPerfilFrag"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="@string/owner_pic"
+                android:src="@drawable/mypicture"
+                app:shapeAppearanceOverlay="@style/ImgRoundedCorners"
+                />
+
+            <!--ImageView
                 android:id="@+id/iv_FotoPerfilFrag"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
@@ -39,7 +42,7 @@
                 android:src="@drawable/mypicture"
                 android:visibility="visible"
                 app:srcCompat="@drawable/mypicture"
-                tools:srcCompat="@drawable/mypicture" />
+                tools:srcCompat="@drawable/mypicture" /-->
 
             <EditText
                 android:id="@+id/et_NombPerfilFrag"

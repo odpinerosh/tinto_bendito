@@ -38,7 +38,7 @@ public class RegistroControl {
             FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
             String id = firebaseUser.getUid();
             long timeStamp = firebaseUser.getMetadata().getCreationTimestamp();
-            Usuario usuario = new Usuario(id, nombresRegis, apellidosRegis, movilRegis, correoRegis, timeStamp);
+            Usuario usuario = new Usuario(id, nombresRegis, apellidosRegis, movilRegis, correoRegis, "", timeStamp);
             FirebaseFirestore.getInstance().collection(ConstantesFirebase.USUARIO)
                     .document(id)
                     .set(usuario, SetOptions.merge())
@@ -50,7 +50,7 @@ public class RegistroControl {
                                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                 contexto.startActivity(intent);
                             } else {
-                                Toast.makeText(contexto,"Error al intentar guadrar los datos del usuario", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(contexto,"Error al intentar guardar los datos del usuario", Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
