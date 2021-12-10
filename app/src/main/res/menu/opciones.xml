@@ -4,19 +4,19 @@
     <item
         android:id="@+id/perfil"
         android:orderInCategory="1"
-        android:title="Perfil"
-        app:showAsAction="never" />
-
-    <item
-        android:id="@+id/ajustes"
-        android:orderInCategory="2"
-        android:title="Ajustes"
+        android:title="Editar perfil"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/cerrar"
         android:orderInCategory="3"
         android:title="Cerrar sesión"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/ajustes"
+        android:orderInCategory="2"
+        android:title="Ajustes"
         app:showAsAction="never" />
 
 </menu>

@@ -66,8 +66,24 @@ public class PerfilFragment extends Fragment {
                 if(getNombre().trim().length() > 2) {
                     PerfilControlador.actualizarDatos(getActivity(), "firstNameUser", getNombre());
                 } else {
-                    Toast.makeText(getActivity(), "Los campos no pueden estar vacíos", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "El nombre no puede estar vacío.", Toast.LENGTH_SHORT).show();
+                    return;
                 }
+
+                if(getApellido().trim().length() > 2) {
+                    PerfilControlador.actualizarDatos(getActivity(), "lastNameUser", getApellido());
+                } else {
+                    Toast.makeText(getActivity(), "El apellido no puede estar vacío.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if(getMovil().trim().length() > 2) {
+                    PerfilControlador.actualizarDatos(getActivity(), "mobileUser", getMovil());
+                } else {
+                    Toast.makeText(getActivity(), "El número móvil no puede estar vacío.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
             }
         });
 
@@ -128,7 +144,7 @@ public class PerfilFragment extends Fragment {
                                 .error(R.drawable.cafecamin)
                                 .into(iv_FotoPerfilFrag);
                     } else {
-                        iv_FotoPerfilFrag.setImageResource(R.drawable.corazon);
+                        iv_FotoPerfilFrag.setImageResource(R.mipmap.ic_launcher_round);
                     }
 
                 }
@@ -165,6 +181,12 @@ public class PerfilFragment extends Fragment {
 
     public String getNombre() {
         return et_NombPerfilFrag.getText().toString();
+    }
+    public String getApellido() {
+        return et_ApePerfilFrag.getText().toString();
+    }
+    public String getMovil() {
+        return et_MovPerfilFrag.getText().toString();
     }
 
     ActivityResultLauncher<String> obtenerImagen = registerForActivityResult(new ActivityResultContracts.GetContent(),

@@ -56,7 +56,7 @@ public class PerfilControlador {
         //Obtener la referencia del almacen de datos
         StorageReference archivoPath = FirebaseStorage.getInstance().getReference()
                 .child(ConstantesFirebase.USUARIO_IMG_PERFIL).child(firebaseUser.getUid() + ".jpg");
-        //Log.i("USUARIO_IMG", archivoPath.toString());
+
         //Guardar el archivo que llega por parámetro
         archivoPath.putFile(result)
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
